@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOLUTE — Premium Vapor Lounge</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=DM+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="smokeCanvas"></canvas>
+  <div class="vignette"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">VOLUTE</a>
+    <ul class="nav-links">
+      <li><a href="#about">Lounge</a></li>
+      <li><a href="#products">Devices</a></li>
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#visit">Besuch</a></li>
+    </ul>
+    <a href="#visit" class="nav-reserve">Tisch reservieren</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">VAPOR</div>
+    <div class="hero-content">
+      <p class="hero-pre">Berlin · Mitte · Seit 2019</p>
+      <h1 class="hero-title">
+        <em>Die Kunst</em><br>
+        des Dampfes
+      </h1>
+      <p class="hero-body">
+        Kein Shop. Eine Erfahrung.<br>
+        Handverlesene Liquids, erlesene Devices,<br>
+        und eine Atmosphäre, die bleibt.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-main" id="heroBtn">Kollektion entdecken</a>
+        <a href="#about" class="btn-link">↓ Mehr erfahren</a>
+      </div>
+    </div>
+    <div class="hero-aside">
+      <div class="hero-number-block">
+        <div class="hn">
+          <span class="hn-val" data-target="200">0</span>
+          <span class="hn-plus">+</span>
+          <span class="hn-label">Flavors</span>
+        </div>
+        <div class="hn">
+          <span class="hn-val" data-target="5">0</span>
+          <span class="hn-star">★</span>
+          <span class="hn-label">Bewertung</span>
+        </div>
+        <div class="hn">
+          <span class="hn-val" data-target="12000">0</span>
+          <span class="hn-plus">+</span>
+          <span class="hn-label">Stammgäste</span>
+        </div>
+      </div>
+      <div class="smoke-bottle" id="smokeBottle">
+        <div class="bottle-shape">
+          <div class="bottle-label">
+            <span>V·O·L·U·T·E</span>
+            <small>Signature Blend</small>
+          </div>
+          <div class="bottle-liquid"></div>
+        </div>
+        <div class="bottle-mist" id="bottleMist"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <span class="divider-ornament">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ABOUT / LOUNGE -->
+  <section class="about" id="about">
+    <div class="about-visual">
+      <div class="about-card ac-main">
+        <div class="ac-tag">ATMOSPHÄRE</div>
+        <div class="ac-content">
+          <p class="ac-big">Kein gewöhnlicher Ort.</p>
+          <p class="ac-text">Samtene Sessel. Gedämpftes Licht. Der Duft von hundert Liquids in der Luft. Unsere Lounge ist ein Rückzugsort — für die, die Qualität fühlen wollen.</p>
+        </div>
+        <div class="ac-smoke-spot"></div>
+      </div>
+      <div class="about-card ac-side">
+        <div class="ac-tag">ÖFFNUNGSZEITEN</div>
+        <div class="hours-list">
+          <div class="hour-row"><span>Mo – Fr</span><span>12 – 22 Uhr</span></div>
+          <div class="hour-row"><span>Samstag</span><span>11 – 23 Uhr</span></div>
+          <div class="hour-row"><span>Sonntag</span><span>13 – 20 Uhr</span></div>
+        </div>
+      </div>
+      <div class="about-card ac-quote">
+        <blockquote>„Wer einmal hier war, kommt nicht mehr irgendwo hin."</blockquote>
+        <cite>— Vape Magazine, 2024</cite>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">Die Lounge</p>
+      <h2 class="section-heading">Wo jeder<br><em>Zug zählt.</em></h2>
+      <p class="about-desc">Wir haben VOLUTE nicht als Geschäft gedacht, sondern als Gefühl. Als den Moment, wo Dampf langsam aufsteigt, Zeit langsamer wird und jede Wahl — jedes Liquid, jedes Device — mit Sorgfalt getroffen wird.</p>
+      <p class="about-desc">Komm herein. Probiere. Bleibe.</p>
+      <div class="about-features">
+        <div class="af-item" data-hover="smoke">
+          <span class="af-icon">◉</span>
+          <span>Persönliche Beratung</span>
+        </div>
+        <div class="af-item" data-hover="smoke">
+          <span class="af-icon">◉</span>
+          <span>Tasting-Sessions</span>
+        </div>
+        <div class="af-item" data-hover="smoke">
+          <span class="af-icon">◉</span>
+          <span>Community-Abende</span>
+        </div>
+        <div class="af-item" data-hover="smoke">
+          <span class="af-icon">◉</span>
+          <span>Cosy Sitzbereich</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="products-header">
+      <p class="section-label">Unsere Devices</p>
+      <h2 class="section-heading">Ausgewählt.<br><em>Nicht kompromittiert.</em></h2>
+    </div>
+    <div class="products-grid">
+      <div class="prod-card" data-smoke-color="gold">
+        <div class="prod-img pi-1">
+          <div class="prod-smoke-layer"></div>
+          <svg class="prod-svg" viewBox="0 0 80 200" fill="none">
+            <rect x="20" y="40" width="40" height="130" rx="10" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="28" y="50" width="24" height="30" rx="4" fill="currentColor" opacity="0.12"/>
+            <text x="40" y="72" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.6" font-family="DM Mono">80W</text>
+            <circle cx="40" cy="148" r="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="40" y1="25" x2="40" y2="40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prod-info">
+          <div class="prod-top">
+            <h3>Phantom X</h3>
+            <span class="prod-tag">Bestseller</span>
+          </div>
+          <p>80W Box Mod — Mesh Coil</p>
+          <div class="prod-foot">
+            <span class="prod-price">€ 89,99</span>
+            <button class="prod-btn" data-name="Phantom X">In den Warenkorb</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card" data-smoke-color="rose">
+        <div class="prod-img pi-2">
+          <div class="prod-smoke-layer"></div>
+          <svg class="prod-svg" viewBox="0 0 60 180" fill="none">
+            <rect x="15" y="30" width="30" height="120" rx="15" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="30" cy="26" rx="8" ry="10" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="30" y1="10" x2="30" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prod-info">
+          <div class="prod-top">
+            <h3>Slim Pro</h3>
+            <span class="prod-tag">Neu</span>
+          </div>
+          <p>Pod System — 900 mAh</p>
+          <div class="prod-foot">
+            <span class="prod-price">€ 49,99</span>
+            <button class="prod-btn" data-name="Slim Pro">In den Warenkorb</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card" data-smoke-color="warm">
+        <div class="prod-img pi-3">
+          <div class="prod-smoke-layer"></div>
+          <svg class="prod-svg" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="40" cy="40" r="16" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            <circle cx="40" cy="40" r="5" fill="currentColor" opacity="0.5"/>
+            <line x1="40" y1="12" x2="40" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="40" y1="60" x2="40" y2="68" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="12" y1="40" x2="20" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="60" y1="40" x2="68" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prod-info">
+          <div class="prod-top">
+            <h3>Orion AIO</h3>
+            <span class="prod-tag">Starter</span>
+          </div>
+          <p>All-in-One — USB-C</p>
+          <div class="prod-foot">
+            <span class="prod-price">€ 34,99</span>
+            <button class="prod-btn" data-name="Orion AIO">In den Warenkorb</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--wide" data-smoke-color="gold">
+        <div class="prod-img pi-4">
+          <div class="prod-smoke-layer"></div>
+          <svg class="prod-svg prod-svg--wide" viewBox="0 0 160 120" fill="none">
+            <rect x="20" y="20" width="120" height="80" rx="12" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="32" y="32" width="60" height="56" rx="6" fill="currentColor" opacity="0.06"/>
+            <text x="62" y="66" text-anchor="middle" fill="currentColor" font-size="18" opacity="0.5" font-family="DM Mono">200W</text>
+            <circle cx="130" cy="60" r="12" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="prod-info">
+          <div class="prod-top">
+            <h3>Titan 200</h3>
+            <span class="prod-tag">High-Power</span>
+          </div>
+          <p>200W Dual-Battery Mod — für Profis</p>
+          <div class="prod-foot">
+            <span class="prod-price">€ 129,99</span>
+            <button class="prod-btn" data-name="Titan 200">In den Warenkorb</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CART TOAST -->
+    <div class="cart-toast" id="cartToast">
+      <span class="toast-icon">✓</span>
+      <span class="toast-text">In den Warenkorb gelegt</span>
+    </div>
+  </section>
+
+  <!-- FLAVORS -->
+  <section class="flavors" id="flavors">
+    <div class="flavors-header">
+      <p class="section-label">Signature Flavors</p>
+      <h2 class="section-heading">Jeder Zug<br><em>eine Geschichte.</em></h2>
+    </div>
+    <div class="flavor-rail" id="flavorRail">
+      <div class="flavor-item" data-color="#d4a843">
+        <div class="fi-dot" style="background:#d4a843"></div>
+        <div class="fi-text">
+          <h4>Golden Caramel</h4>
+          <p>Warm, cremig, tief — wie ein Abend am Kamin</p>
+        </div>
+        <span class="fi-tag">Dessert</span>
+        <div class="fi-smoke"></div>
+      </div>
+      <div class="flavor-item" data-color="#7ec8a4">
+        <div class="fi-dot" style="background:#7ec8a4"></div>
+        <div class="fi-text">
+          <h4>Mint & Cedar</h4>
+          <p>Frisch wie Frühlingsluft, ruhig wie Wald</p>
+        </div>
+        <span class="fi-tag">Menthol</span>
+        <div class="fi-smoke"></div>
+      </div>
+      <div class="flavor-item" data-color="#c97b7b">
+        <div class="fi-dot" style="background:#c97b7b"></div>
+        <div class="fi-text">
+          <h4>Rose & Lychee</h4>
+          <p>Zart, blumig, mit einem tropischen Nachklang</p>
+        </div>
+        <span class="fi-tag">Frucht</span>
+        <div class="fi-smoke"></div>
+      </div>
+      <div class="flavor-item" data-color="#7ba3c9">
+        <div class="fi-dot" style="background:#7ba3c9"></div>
+        <div class="fi-text">
+          <h4>Blueberry Rain</h4>
+          <p>Saftige Beere — kühl und vollmundig</p>
+        </div>
+        <span class="fi-tag">Frucht</span>
+        <div class="fi-smoke"></div>
+      </div>
+      <div class="flavor-item" data-color="#b8956a">
+        <div class="fi-dot" style="background:#b8956a"></div>
+        <div class="fi-text">
+          <h4>Dark Tobacco</h4>
+          <p>Klassisch, komplex, unverwechselbar</p>
+        </div>
+        <span class="fi-tag">Klassik</span>
+        <div class="fi-smoke"></div>
+      </div>
+      <div class="flavor-item" data-color="#9b7ec9">
+        <div class="fi-dot" style="background:#9b7ec9"></div>
+        <div class="fi-text">
+          <h4>Lavender Haze</h4>
+          <p>Entspannend, satt, ein Hauch Provence</p>
+        </div>
+        <span class="fi-tag">Botanisch</span>
+        <div class="fi-smoke"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <div class="visit-text">
+        <p class="section-label">Komm vorbei</p>
+        <h2 class="section-heading">Du weißt, wo<br><em>wir sind.</em></h2>
+        <address>
+          <p>Rauchstraße 42</p>
+          <p>10115 Berlin-Mitte</p>
+        </address>
+        <a href="mailto:hallo@volute.de" class="visit-mail">hallo@volute.de</a>
+      </div>
+      <div class="visit-form-wrap">
+        <p class="form-label">Newsletter — 15% auf die erste Bestellung</p>
+        <div class="visit-form">
+          <input type="email" id="emailInput" placeholder="Deine E-Mail-Adresse" autocomplete="off"/>
+          <button class="btn-main" id="formBtn">Jetzt sichern</button>
+        </div>
+        <p class="form-hint">Kein Spam. Niemals.</p>
+        <div class="form-success" id="formSuccess">
+          <span>✦</span> Willkommen in der Familie.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">VOLUTE</div>
+      <p class="footer-tagline"><em>Cloud Culture. Berlin.</em></p>
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p class="footer-age">Nur für Personen ab 18 Jahren. © 2025 VOLUTE GmbH.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
